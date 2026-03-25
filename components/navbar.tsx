@@ -78,7 +78,7 @@ export function Navbar() {
             className={cn(
               "relative flex items-center gap-2 rounded-full border px-2 py-2 transition-all duration-500 motion-reduce:transition-none",
               isScrolled
-                ? "border-border/50 bg-background/80 backdrop-blur-2xl shadow-lg shadow-black/20 shadow-[0_4px_30px_oklch(0.55_0.25_290_/_0.05)]"
+                ? "border-border/50 bg-background/80 backdrop-blur-2xl shadow-black/20 shadow-[0_4px_30px_oklch(0.55_0.25_290/0.05)]"
                 : "border-border/30 bg-background/50 backdrop-blur-xl"
             )}
           >
@@ -242,8 +242,14 @@ export function Navbar() {
             <ChevronRight className="ml-2 h-5 w-5" />
           </WaitlistButton>
 
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10 motion-reduce:hidden" aria-hidden="true" />
-          <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-10 motion-reduce:hidden" aria-hidden="true" />
+          <div
+            className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10 motion-reduce:hidden"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-10 motion-reduce:hidden"
+            aria-hidden="true"
+          />
         </div>
       </div>
 
